@@ -1,43 +1,143 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+
+
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  font-size: 100%;
+line-height: 1.5;
+  
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.section {
+  position: absolute;
+  top: 180px;
+  left: 35px;
+  font-size: 200%;
+  line-height: 2;
 }
-
-ul.posts li {
-    list-style: none;
+.container1{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.sum{
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family:verdana;
+}
+.st{
+  position: absolute;
+  top: -100px;
+  left: 30px;
+  font-size: 100%;
+  font-family:verdana;
+}
+.styling{
+  position: relative;
+  text-align: left;
+  color: white;
+  left: 30px;
+  font-size: 200%;
+  font-family:arial;
+  top:-45px;
+}
+.st1{
+  position: absolute;
+  top: -50px;
+  left: 450px;
+  font-size: 100%;
+  font-family:verdana;
+}
+.styling1{
+  position: relative;
+  text-align: right;
+  color: white;
+  left: 400px;
+  font-size: 200%;
+  font-family:verdana;
+  top:-40px;
+  line-height: 1.5;
+}
+.stylingRMIT{
+  position: relative;
+  text-align: right;
+  color: white;
+  left: 400px;
+  font-size: 200%;
+  top:30px;
+  font-family:verdana;
+}
+.st2{
+  position: absolute;
+  top: -50px;
+  left: 80px;
+  font-size: 100%;
+  font-family:verdana;
+  top: -100px;
+}
+.stylingIn{
+  position: relative;
+  text-align: left;
+  color: white;
+  left: 100px;
+  font-size: 175%;
+  top:-30px;
+  font-family:verdana;
+}
+.styling2{
+  position: absolute;
+  text-align: left;
+  color: white;
+  left: 100px;
+  font-size: 200%;
+  font-family:verdana;
+  top:10px;
+  line-height: 1.5;
+}
+.stylingtool{
+  position: relative;
+  text-align: left;
+  color: white;
+  left: 100px;
+  font-size: 175%;
+  top:0px;
+  font-family:verdana;
+}
+.styling3{
+  position: absolute;
+  text-align: left;
+  color: white;
+  left: 120px;
+  font-size: 200%;
+  top:70px;
+  line-height: 1.5;
+}
+.stylings{
+  position: relative;
+  text-align: left;
+  color: white;
+  left: 100px;
+  font-size: 175%;
+  top:70px;
+  font-family:verdana;
+}
+.styling4{
+  position: absolute;
+  text-align: left;
+  color: white;
+  left: 120px;
+  font-size: 200%;
+  top:210px;
+  line-height: 1.5;
 }
