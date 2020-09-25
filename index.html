@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html>
+
+<body style="background-color:black;">
 <head>
 	<title> your coffee </title>
 	<link rel="stylesheet" type="text/css" href="main.css">	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
  
 <div class="your_coffee">
-	<img src="https://i.imgur.com/WO0C8aZ.png" >
-	<div class="your_coffee1">
-		<img src="https://i.imgur.com/71vQaTw.png">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+@media screen and (max-height: 450px) {
+  .overlai a {font-size: 20px}
+  .overlai .closebtnn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
 
-	</div>
+<div id="myNav" class="overlai">
+  <a href="javascript:void(0)" class="closebtnn" onclick="closeNav()">&times;</a>
+  <div class="overlai-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
 
-<div class="your_coffee2">
-		<img src="https://i.imgur.com/CRyQ5kB.png">
 
-	</div>
+<span style="font-size:100px; padding:20px; cursor:pointer; color:white;" onclick="openNav()">&#9776; </span>
 
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+  <button class="openBtn" onclick="openSearch()" type="submit"><i class="fa fa-search"></i></button>
+</button>
+
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+     
+</body>
 </div>
 	
 <div class = "part2">
-	<img src="https://i.imgur.com/xEnTi6w.png "width:100%;">
+	<img src="https://i.imgur.com/qZvOxtU.jpg" style="width:100%;">
+
+	<div class="cau_chuyen_thuong_hieu">
+<pre>
+<p style="color:brown; font-family:Helvetica">CÂU CHUYỆN 
+THƯƠNG HIỆU</p>
+</pre> 
 </div>
 
+	
+</div>
 
+</body>
 </html>
