@@ -1,7 +1,7 @@
 .your_coffee {
     background-image: url("https://i.imgur.com/V8dgzZX.png");
     min-height: 100px;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: 768px 100px;
     position: relative;
@@ -10,18 +10,18 @@
 
   .part2 {
     background-image: url("https://i.imgur.com/zU8l9IM.png");
-    min-height: 2600px;
-    background-position: center;
+    min-height: 708px;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 768px 708px;
     position: relative;
       
   }
   .bottom-left {
     position: absolute;
     top: 60%;
-    left: 3%;
+    left: -1%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    font-size: 40px;
     color: darkgoldenrod;
   }
