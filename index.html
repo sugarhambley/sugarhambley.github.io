@@ -1,112 +1,228 @@
 <!DOCTYPE html>
 <html>
-
-@media and sreen (min-width:768px) {
-<body style="background-color:black;">
 <head>
-	<title> your coffee </title>
+    <title> your coffee </title>
 	<link rel="stylesheet" type="text/css" href="main.css">	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
- 
 <div class="your_coffee">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
-}
-@media and sreen (min-width:768px) {
-  .overlai a {font-size: 20px}
-  .overlai .closebtnn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-</style>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+        
+        .overla {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+        
+        .overla-conten {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .overla a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .overla a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+        
+        .overla .closebt {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .overla a {font-size: 20px}
+          .overla .closebt {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div id="myNav" class="overla">
+          <a href="javascript:void(0)" class="closebt" onclick="closeNav()">&times;</a>
+          <div class="overla-conten">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        
+        <span style="font-size:50px;cursor:pointer;color: white; padding: 20px 20px; " onclick="openNav()">&#9776; </span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+             
+        </body>
 
-<div id="myNav" class="overlai">
-  <a href="javascript:void(0)" class="closebtnn" onclick="closeNav()">&times;</a>
-  <div class="overlai-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
+        <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            body {
+              font-family: Arial;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            .openBtn {
+              background: black;
+              border: none;
+              padding: 10px 15px;
+              font-size: 20px;
+              cursor: pointer;
+              color:white;
+              margin-left: 750px;
+              
+            }
+            
+            .openBtn:hover {
+              background: #bbb;
+            }
+            
+            .overlay {
+              height: 100%;
+              width: 100%;
+              display: none;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: rgb(0,0,0);
+              background-color: rgba(0,0,0, 0.9);
+            }
+            
+            .overlay-content {
+              position: relative;
+              top: 46%;
+              width: 80%;
+              text-align: center;
+              margin-top: 10px;
+              margin: auto;
+            }
+            
+            .overlay .closebtn {
+              position: absolute;
+              top: 20px;
+              right: 45px;
+              font-size: 50px;
+              cursor: pointer;
+              color: white;
+            }
+            
+            .overlay .closebtn:hover {
+              color: #ccc;
+            }
+            
+            .overlay input[type=text] {
+              padding: 15px;
+              font-size: 17px;
+              border: none;
+              float: left;
+              width: 80%;
+              background: white;
+            }
+            
+            .overlay input[type=text]:hover {
+              background: #f1f1f1;
+            }
+            
+            .overlay button {
+              float: right;
+              width: 20%;
+              padding: 15px;
+              background: #ddd;
+              font-size: 15px;
+              border: none;
+              cursor: pointer;
+              
+            }
+            
+            .overlay button:hover {
+              background: #bbb;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div id="myOverlay" class="overlay">
+              <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+              <div class="overlay-content">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            
+            
+            <button class="openBtn" type="submit" onclick="openSearch()"><i class="fa fa-search"></i></button>
+            
+            <script>
+            function openSearch() {
+              document.getElementById("myOverlay").style.display = "block";
+            }
+            
+            function closeSearch() {
+              document.getElementById("myOverlay").style.display = "none";
+            }
+            </script>
+                 
+            </body>
+</div>
+<div class="part2">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="bottom-left">
+                <pre>
+                    CÂU CHUYỆN
+                    THƯƠNG HIỆU
+                </pre>
+            </div>
+        </body>
 </div>
 
-
-<span style="font-size:50px; padding:20px; cursor:pointer; color:white;" onclick="openNav()">&#9776; </span>
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
-</body>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: Arial;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-</style>
-</head>
-<body>
-
-<div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
-  <div class="overlay-content">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
-
-
-  <button class="openBtn" onclick="openSearch()" type="submit"><i class="fa fa-search"></i></button>
-</button>
-
-<script>
-function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-     
-</body>
-</div>
-	
-<div class = "part2">
-	<img src="https://i.imgur.com/qZvOxtU.jpg" style="width:100%;">
-
-	<div class="cau_chuyen_thuong_hieu">
-<pre>
-<p style="color:brown; font-family:Helvetica">CÂU CHUYỆN 
-THƯƠNG HIỆU</p>
-</pre> 
-</div>
-
-	
-</div>
-
-</body>
-}
 </html>
