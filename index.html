@@ -1,488 +1,261 @@
 <!DOCTYPE html>
 <html>
-	<body style="background-color:black;">
-<head>
-    <title> your coffee </title>
-	<link rel="stylesheet" type="text/css" href="main.css">	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .your_coffee {
-                 background-image: url("https://i.imgur.com/usTy2nH.png");
-                 min-height: 50px;
-                 background-position: left;
-                 background-repeat: no-repeat;
-                 background-size: 100%;
-                 position: relative;
-		}
-            .part2 {
-    background-image: url("https://i.imgur.com/HBbgNQ7.jpg");
-    min-height: 340px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-      
-  }
-		.boom {
-    background-image: url("https://i.imgur.com/jYBOWhD.jpg");
-    min-height: 345px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-      
-  }
-  @media screen and (min-width: 768px) {
-        .your_coffee{
-            
-        } 
-	.part2 {
-	  }
-	 .boom{
-	  }
-        }
-        </style>
-</head>
-<body>
-<div class="your_coffee">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        body {
-          font-family: 'Lato', sans-serif;
-        }
-        
-        .overla {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.9);
-          overflow-x: hidden;
-          transition: 0.5s;
-        }
-        
-        .overla-conten {
-          position: relative;
-          top: 25%;
-          width: 100%;
-          text-align: center;
-          margin-top: 30px;
-        }
-        
-        .overla a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-        
-        .overla a:hover, .overlay a:focus {
-          color: #f1f1f1;
-        }
-        
-        .overla .closebt {
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          font-size: 60px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .overla a {font-size: 20px}
-          .overla .closebt {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-          }
-        }
-        </style>
+    <body style="background-color:black">
+        <head> 
+            <title> Your Coffee </title>
+            <link rel="stylesheet" type="text/css" href="main.css">	
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
-        
-        <div id="myNav" class="overla">
-          <a href="javascript:void(0)" class="closebt" onclick="closeNav()">&times;</a>
-          <div class="overla-conten">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-        
-        <span style="font-size:30px;cursor:pointer;color: white; padding-top: 100px;" onclick="openNav()">&#9776; </span>
-        
-        <script>
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
-        </script>
+            <div class="your_coffee">
+                <div id="myNav" class="overla">
+                    <a href="javascript:void(0)" class="closebt" onclick="closeNav()">&times;</a>
+                    <div class="overla-conten">
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
+                    </div>
+                  </div>
+                  
+                  <span class="menu" onclick="openNav()">&#9776; </span>
+                
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+                  </script>
+             </div>
+
+             <div class="part2">
+                <div class="bottom-left">
+                    <pre>
+CÂU CHUYỆN
+THƯƠNG HIỆU
+                    </pre>
+                </div>
+                <div class="part3">
+                    <pre>
+                        Tại Your Coffee,chúng tôi 
+                    luôn chân trọng những câu chuyện 
+                   và đề cao giá trị kết nối con người.
+                   Chúng tôi mong muốn mọi người xích 
+                      lại gần nhau và tìm niềm vui 
+                    bên những tách cà phê chất lượng.
+                    </pre>
+                    <div class ="xemthem">
+                        <a href="google.com"><img src="https://i.imgur.com/cuZihmZ.png" style="width:100%;height:100%;"></a>
+                        </div>
+                </div><!-- part3 -->
+
+
+
+
+
+             </div> <!-- part2 -->
+    
+             <div class="boom">
+
+
+             </div> <!-- boom -->
+             <div class="container">
+                 <div class="hethong">
+<pre>HỆ THỐNG 
+CỬA HÀNG</pre>
+                 </div>
+                 <div class="hethong1">
+                   
+<pre>Your Coffee là không gian
+dành riêng cho những ai trót
+yêu say đắm hương vị của
+những hạt cà phê tuyệt hảo.
+Hãy ghé hệ thống cửa hàng
+của chúng tôi để khám phá
+những điều kì diệu đang diễn
+ra tại Your Coffee mỗi ngày</pre>
+                 </div>
+  
+                <div class="mySlides">
+                
+                  <div class="numbertext">1 / 6</div>
+                  <img src="https://i.imgur.com/TxxxtmO.png" style="width:50%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="https://i.imgur.com/OQU0Ven.png" style="width:50%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="https://i.imgur.com/ftyFi9T.png" style="width:50%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="https://i.imgur.com/R1rSdkJ.png" style="width:50%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5/ 6</div>
+                    <img src="https://i.imgur.com/5yvoVi7.png" style="width:50%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="https://i.imgur.com/XOIEx63.png" style="width:50%">
+                  </div>
+              
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/TxxxtmO.png" style="width:100%" onclick="currentSlide(1)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/OQU0Ven.png" style="width:100%" onclick="currentSlide(2)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/ftyFi9T.png" style="width:100%" onclick="currentSlide(3)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/R1rSdkJ.png" style="width:100%" onclick="currentSlide(4)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/5yvoVi7.png" style="width:100%" onclick="currentSlide(5)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="https://i.imgur.com/XOIEx63.png" style="width:100%" onclick="currentSlide(6)" >
+                  </div>
+                 
+                  </div>
+                </div>
+            
+              
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
+
+              <div class="bag">
+                  <div class="dong">
+                      <p>CÀ PHÊ ĐÓNG GÓI</p>
+                      
+                  </div>
+              <div class="dong1">
+                  <pre>
+  Bạn muốn trổ tài pha những ly cà phê 
+  đậm đà, thơm ngon ngay tại nhà. Hay 
+  chỉ đơn giản là đang tìm một món quà 
+ không quá cầu kì, nhưng đậm chất tình 
+nghĩa dành cho những người bạn quan tâm. 
+ Vậy thì dòng sản phẩm cà phê đóng gói 
+ đa dạng về thể loại tại Your Coffee sẽ
+là một gợi ý hay ho đáng để bạn lưu tâm đấy. 
+                  </pre>
+              </div>
+              <body>
+
+
+                <div id="myNavy" class="overlayy">
+                                    <a href="javascript:void(0)" class="closebtt" onclick="closeNavy()">&times;</a>
+                                    <div class="overlayy-contentt">
+                                      <form action="/action_page.php" class="containering">
+                    <h1>ĐẶT HÀNG</h1>
+                
+                    <label for="email"><b>Tên Đặt Hàng</b></label>
+                    <input type="text" placeholder="Tên" name="email" required>
+                
+                    <label for="psw"><b>Đơn Hàng</b></label>
+                    <input type="text" placeholder="Đơn Hàng" name="psw" required>
+                
+                    <button type="submit" class="btn">Đặt Hàng</button>
+                  </form>
+                
+                
+                                    </div>
+                                  </div>
+                                  
+                                  <div class= "but"><img class="menu" onclick="openNavy()" src="https://i.imgur.com/xRSgO7b.png" style="width:50%;height:50%;"> </div>
+                                
+                                  
+                                  <script>
+                       function openNavy() {
+                               document.getElementById("myNavy").style.width = "100%";
+                                  }
+                                  
+                               function closeNavy() {
+                       document.getElementById("myNavy").style.width = "0%";
+                                  }
+                                  </script>
+                
+                
+                </body>
+              </div>
              
-        </body>
+              <div class="fin">
+                  <div class="fin1">
+                    <a href="" style="color: white;">Câu chuyện thương hiệu</a>
+                  </div>
+                  <div class="fin2">
+                    <a href="" style="color: white;">Sản phẩm nổi bật</a>
+                  </div>
+                  <div class="fin3">
+                    <a href="" style="color: white;">Hệ thống cửa hàng</a>
+                  </div>
+                  <div class="fin4">
+                    <a href="" style="color: white;">Cà phê đóng gói</a>
+                  </div>
+                  <div class="fin5">
+                    <a href="" style="color: white;">Khuyến mãi</a>
+                  </div>
+                  <div class="fin6">
+                    <a href="" style="color: white;">Giao hàng tận nơi</a>
+                  </div>
+                  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <input type="text" placeholder="Email của bạn..." >
+                    <button type="submit">Gửi</i></button>
+                  </form>
 
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: Arial;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.openBtn {
-  background: transparent;
-  border: none;
-  padding: 10px 15px;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-
-}
-
-.openBtn:hover {
-  background: #bbb;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-}
-
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-.overlay input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: white;
-}
-
-.overlay input[type=text]:hover {
-  background: #f1f1f1;
-}
-
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay button:hover {
-  background: #bbb;
-}
-</style>
-</head>
-<body>
-
-<div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-  <div class="overlay-content">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
-
-<button class="openBtn" type="submit" onclick="openSearch()"><i class="fa fa-search"></i></button>
-
-<script>
-function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-     
-</body>
-</div>
-</body>
-<div class="part2">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-.bottom-left{
-    position: absolute;
-    top: 60%;
-    left:-5%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: darkgoldenrod;
-    font-weight: bold;
-  }
-		.part3{
-    position: absolute;
-    top: 73%;
-    left:18%;
-    transform: translate(-50%, -50%);
-    font-size: 8px;
-    color: black;
-    font-weight: bold;
-    }
-.xemthem {
- position: absolute;
-    top: 90%;
-    left:40%;
-    transform: translate(-50%, -50%);
-}
-		
-body {
-	f font-family: 'Lato', sans-serif;
-         
-        }
-        
-@media screen and (min-width: 768px) {
-        .bottom-left{
+               </div>
             
-        } 
-	.part3 {
-	  }
-        }
-        </style>
-        </head>
-        <body>
-            <div class="bottom-left">
-                <pre>
-                    CÂU CHUYỆN
-                    THƯƠNG HIỆU
-                </pre>
-            </div>
         </body>
-	<body>
-            <div class="part3">
-                <pre>
-                    Tại YourCoffee,chúng tôi 
-                luôn chân trọng những câu chuyện 
-	       và đề cao giá trị kết nốicon người.
-	       Chúng tôi mong muốn mọi người xích 
-                  lại gần nhau và tìm niềm vui 
-                bên những tách cà phê chất lượng.
-                </pre>
-            </div>
-        </body>
-	<div class ="xemthem">
-	<a href="google.com"><img src="https://i.imgur.com/cuZihmZ.png" style="width:70px;height:50px;"></a>
-	</div>
-</div>
-		
-		
-		
-		<div class="boom">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-		 body {
-          font-family: 'Lato', sans-serif;
-        }
-		.sanpham{
- position: absolute;
-    top: 70%;
-    left:25%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: WHITE;
-    font-weight: bold;
-		}
-		.pic1 {
- 	position: absolute;
-    	top: 40%;
-    	left:20%;
-    	transform: translate(-50%, -50%);
-}
-		.pic2{
- position: absolute;
-    top: 40%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-		.pic3 {
- position: absolute;
-    top: 85%;
-    left:80%;
-    transform: translate(-50%, -50%);
-}
-		.pic4{
- position: absolute;
-    top: 105%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-
-		html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 10%;
-  padding: 20px ;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 1px;
-  color: white;
-  background-color:transparent;
-  text-align: center;
-  cursor: pointer;
-  width: 95px;
-  height: 120px;
-}
-.button1 {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 1px;
-  color: white;
-  background-color:transparent;
-  text-align: center;
-  cursor: pointer;
-  width: 103px;
-  height: 125px;
-}
-.button:hover {
-  background-color: #555;
-}
-</style>
-	
-		
-        </head>
-			<body>
-			<div class="row">
-<div class ="pic1">
-  <div class="column">
-    <div class="card">
-    <p><button class="button">
-      <img src="https://i.imgur.com/R3yzxdo.png" style="width:90px;height:115px;">
-      <div class="container">
-        </button></p>
-      </div>
-    </div>
-  </div>
-</div>
-				
-<div class ="pic2">
-  <div class="column">
-    <div class="card">
-    <p><button class="button1">
-      <img src="https://i.imgur.com/WRYFHKX.png" style="width:98px;height:120px;">
-      <div class="container">
-         </button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class ="pic3">
-  <div class="column">
-    <div class="card">
-    <p><button class="button">
-      <img src="https://i.imgur.com/sm9gtEz.png" style=width:90px;height:115px;">
-      <div class="container">
-        </button></p>
-      </div>
-    </div>
-  </div>
-</div>
-			    <body>
-            <div class="sanpham">
-                <pre>
-                    SẢN PHẨM NỔI BẬT 
-                </pre>
-            </div>
-        </body>
-				<div class ="pic4">
- <img src="https://i.imgur.com/vyF9uFT.png" style="width:250px;height:130px;">
-   		</div>
-			    
-</div>	
-			</body>
-		
-			    </div>		
-		
- <img src="https://i.imgur.com/YUiTplb.jpeg" style="width:100%;">
-<img src="https://i.imgur.com/OcY9wp9.png" style="width:100%;">
-			    	
-			    </body>
+    </body>
 </html>
