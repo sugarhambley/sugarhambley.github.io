@@ -1,17 +1,69 @@
-
-
 .your_coffee {
     background-image: url("https://i.imgur.com/usTy2nH.png");
-    min-height: 50px;
+    min-height: 30px;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 640px 360px;
+    background-size: 100%;
     position: relative;
-      
+}
+
+.overla {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overla-conten {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overla a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .overla a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overla .closebt {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
   }
 
+.menu{
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    
+}
+  
 
-  .part2 {
+
+
+
+
+
+.part2 {
     background-image: url("https://i.imgur.com/HBbgNQ7.jpg");
     min-height: 340px;
     background-position: left;
@@ -20,11 +72,837 @@
     position: relative;
       
   }
-  .bottom-left {
+
+.bottom-left{
+    position: absolute;
+    top: 145px;
+    left: 10%;
+    
+    font-size: 20px;
+    color: darkgoldenrod;
+    font-weight: bold;
+  }
+
+  .part3{
+    position: absolute;
+    top: 73%;
+    left:14%;
+    transform: translate(-50%, -50%);
+    font-size: 9px;
+    color: black;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.xemthem {
+ position: absolute;
+    top: 80%;
+    left:70%;
+    
+}
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  
+  .container {
+    background-image: url("https://i.imgur.com/fSqBwKX.png");
+    min-height: 100px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 92%;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+.hethong
+{
+    position: absolute;
+    top: -5%;
+    left:55%;
+   
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hethong1
+{
+    position: absolute;
+    top: 50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    font-size: 9px;
+    color:white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boom{
+    background-image: url("https://i.imgur.com/wAUkc92.png");
+    min-height: 360px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+
+.bag {
+    background-image: url("https://i.imgur.com/DiNqPJi.png");
+    min-height: 460px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.dong{
+    position: absolute;
+  top: -5px;
+  font-size:25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(80, 73, 54);
+  font-weight: bold;
+  
+  left: 20px;
+}
+.dong1{
+    position: absolute;
+    top: 50%;
+    left:17%;
+    font-size: 10px;
+    color: black;
+    
+}
+.overlayy {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlayy-contentt {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlayy a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .overlayy a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlayy .closebtt {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .but{
+    position: absolute;
+    top: 335px;
+    left:120px;
+  
+  }
+  body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.containering {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: salmon;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fin{
+    background-image: url("https://i.imgur.com/FdfiRPC.png");
+    min-height: 230px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+
+.fin1{
+    position: absolute;
+    top: 20%;
+    left:10%;
+    font-size: 13px;
+}
+.fin2{
+    position: absolute;
+    top: 30%;
+    left:10%;
+    font-size: 13px;
+    color:white;
+    
+}
+.fin3{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    font-size: 13px;
+    color:white;
+    
+}
+.fin4{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    font-size: 13px;
+}
+.fin5{
+    position: absolute;
+    top: 30%;
+    left:55%;
+    font-size: 13px;
+    color:white;
+    
+}
+.fin6{
+    position: absolute;
+    top: 40%;
+    left:55%;
+    font-size: 13px;
+    color:white;
+    
+}
+body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+    position: absolute;
+  top:125px;
+
+  }
+  
+  form.example button {
+    
+    width: 20%;
+    padding: 10px;
+    background: gray;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+  top:130px;
+  left: 225px;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+  @media (min-width: 992px) {
+    .your_coffee{
+        background-image: url("https://i.imgur.com/usTy2nH.png");
+        min-height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+    .menu{
+        font-size: 100px;
+      
+       
+    }
+    .part3{
+        position: absolute;
+        top: 73%;
+        left:12%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        color: black;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    .part2 {
+            background-image: url("https://i.imgur.com/HBbgNQ7.jpg");
+            min-height: 1300px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+          
+        }
+        .bottom-left{
+            position: absolute;
+            top: 37%;
+            left: 5%;
+            
+            font-size: 90px;
+            color: darkgoldenrod;
+            font-weight: bold;
+          }
+          .boom{
+            background-image: url("https://i.imgur.com/wAUkc92.png");
+            min-height: 1490px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+        }
+        .xemthem {
+ position: absolute;
+    top: 90%;
+    left:70%;
+        }
+    .bag {
+        background-image: url("https://i.imgur.com/ZSr0Z58.png");
+        min-height: 800px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        
+    }
+    .hethong
+{
+    position: absolute;
+    top: -5%;
+    left:57%;
+   
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hethong1
+{
+    position: absolute;
+    top: 45%;
+    left:75%;
+   
+    font-size:30px;
+    color: white;
+    
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.dong{
+    position: absolute;
+  top: 80px;
+  font-size:90px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(80, 73, 54);
+  font-weight: bold;
+  
+  left: 50px;
+}
+.dong1{
+    position: absolute;
+    top: 35%;
+    left:4%;
+    font-size: 25px;
+    color: black;
+    
+}
+.but{
+    position: absolute;
+    top: 600px;
+    left:300px;
+  
+  }
+  .fin{
+    background-image: url("https://i.imgur.com/CJsTJ6O.png");
+    min-height: 520px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+
+.fin1{
+    position: absolute;
+    top: 20%;
+    left:10%;
+    font-size: 30px;
+}
+.fin2{
+    position: absolute;
+    top: 30%;
+    left:10%;
+    font-size: 30px;
+    color:white;
+    
+}
+.fin3{
+    position: absolute;
+    top: 20%;
+    left:40%;
+    font-size: 30px;
+    color:white;
+    
+}
+.fin4{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 30px;
+}
+.fin5{
+    position: absolute;
+    top: 20%;
+    left:70%;
+    font-size: 30px;
+    color:white;
+    
+}
+.fin6{
+    position: absolute;
+    top: 30%;
+    left:70%;
+    font-size: 30px;
+    color:white;
+    
+}
+body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    height: 10%;
+    background: #f1f1f1;
+    position: absolute;
+  top:250px;
+  left: 450px;
+
+  }
+  
+  form.example button {
+    
+    width: 5%;
+    padding: 10px;
+    background: gray;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+  top:255px;
+  left: 1000px;
+  height: 10%;
+  }
+  
+
+   
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .your_coffee{
+        background-image: url("https://i.imgur.com/usTy2nH.png");
+        min-height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+    .menu{
+        font-size: 100px;
+      
+       
+    }
+    .part3{
+        position: absolute;
+        top: 70%;
+        left:15%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: black;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    .part2 {
+            background-image: url("https://i.imgur.com/HBbgNQ7.jpg");
+            min-height: 760px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+          
+        }
+        .bottom-left{
+            position: absolute;
+            top: 38%;
+            left: 10%;
+            
+            font-size: 50px;
+            color: darkgoldenrod;
+            font-weight: bold;
+          }
+          .boom{
+            background-image: url("https://i.imgur.com/wAUkc92.png");
+            min-height: 780px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+        }
+        .xemthem {
+ position: absolute;
+    top: 78%;
+    left:50%;
+        }
+    .bag {
+        background-image: url("https://i.imgur.com/ZSr0Z58.png");
+        min-height: 460px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        
+    }
+    .hethong
+{
+    position: absolute;
+    top: 0%;
+    left:60%;
+   
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hethong1
+{
+    position: absolute;
+    top: 45%;
+    left:75%;
+   
+    font-size:20px;
+    color: white;
+    
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.dong{
+    position: absolute;
+  top: 60px;
+  font-size:50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(80, 73, 54);
+  font-weight: bold;
+  
+  left: 30px;
+}
+.dong1{
+    position: absolute;
+    top: 35%;
+    left:3%;
+    font-size: 15px;
+    color: black;
+    
+}
+.but{
     position: absolute;
     top: 70%;
-    left:0%
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: darkgoldenrod;
+    left:20%;
+  
   }
+  .fin{
+    background-image: url("https://i.imgur.com/CJsTJ6O.png");
+    min-height: 330px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+
+.fin1{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    font-size: 20px;
+}
+.fin2{
+    position: absolute;
+    top: 35%;
+    left:5%;
+    font-size: 20px;
+    color:white;
+    
+}
+.fin3{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 20px;
+    color:white;
+    
+}
+.fin4{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 20px;
+}
+.fin5{
+    position: absolute;
+    top: 25%;
+    left:75%;
+    font-size: 20px;
+    color:white;
+    
+}
+.fin6{
+    position: absolute;
+    top: 35%;
+    left:75%;
+    font-size: 20px;
+    color:white;
+    
+}
+body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    height: 15%;
+    background: #f1f1f1;
+    position: absolute;
+  top:200px;
+  left: 120px;
+
+  }
+  
+  form.example button {
+    
+    width: 10%;
+    padding: 10px;
+    background: gray;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+  top:205px;
+  left: 600px;
+  height: 15%;
+  }
+
+
+}
