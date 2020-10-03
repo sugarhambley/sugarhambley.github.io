@@ -1,3 +1,4 @@
+
 .your_coffee {
     background-image: url("https://i.imgur.com/usTy2nH.png");
     min-height: 30px;
@@ -6,6 +7,68 @@
     background-size: 100%;
     position: relative;
 }
+.thuonghieu{
+    position: absolute;
+    top: 40px;
+    left: 12%;
+    font-size: 0px;
+    color:transparent;
+    font-weight: bold;
+  }
+  .sanpham{
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    font-size: 0px;
+    color:transparent;
+    font-weight: bold;
+  } 
+  .cuahang{
+    position: absolute;
+    top: 40px;
+    left: 70%;
+    font-size: 0px;
+    color:transparent;
+    font-weight: bold;
+  }
+  .caphedonggoi{
+    position: absolute;
+    top: 40px;
+    left: 80%;
+    font-size: 0px;
+    color:transparent;
+    font-weight: bold;
+  }
+  form.examples input[type=text] {
+    padding: 0px;
+    font-size: 0px;
+    border: 0px solid grey;
+    float: left;
+    width:0%;
+    background: transparent;
+  }
+  
+  form.examples button {
+    float: left;
+    width: 0%;
+    padding: 0px;
+    background:  transparent;
+    color: transparent;
+    font-size: 0px;
+    border: 0px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.examples button:hover {
+    background: transparent;
+  }
+  
+  form.examples::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .overla {
     height: 100%;
@@ -31,7 +94,7 @@
   .overla a {
     padding: 8px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -76,19 +139,19 @@
 .bottom-left{
     position: absolute;
     top: 145px;
-    left: 10%;
+    left: 9%;
     
     font-size: 20px;
-    color: darkgoldenrod;
+    
     font-weight: bold;
   }
 
   .part3{
     position: absolute;
-    top: 73%;
-    left:14%;
+    top: 75%;
+    left:22%;
     transform: translate(-50%, -50%);
-    font-size: 9px;
+    font-size: 11px;
     color: black;
     
     font-family: Arial, Helvetica, sans-serif;
@@ -203,10 +266,10 @@ body {
 .hethong
 {
     position: absolute;
-    top: -5%;
-    left:55%;
+    top: 0%;
+    left:57%;
    
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-weight: bold;
     
@@ -215,10 +278,10 @@ body {
 .hethong1
 {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left:75%;
     transform: translate(-50%, -50%);
-    font-size: 9px;
+    font-size: 10px;
     color:white;
     
     font-family: Arial, Helvetica, sans-serif;
@@ -254,9 +317,9 @@ body {
 }
 .dong1{
     position: absolute;
-    top: 50%;
-    left:17%;
-    font-size: 10px;
+    top: 53%;
+    left:12%;
+    font-size: 15px;
     color: black;
     
 }
@@ -303,7 +366,7 @@ body {
   }
   .but{
     position: absolute;
-    top: 335px;
+    top: 390px;
     left:120px;
   
   }
@@ -325,7 +388,7 @@ body {
   margin: 20px;
   max-width: 300px;
   padding: 16px;
-  background-color: salmon;
+  background-color: black;
 }
 
 
@@ -454,6 +517,7 @@ body {
     content: "";
     clear: both;
     display: table;
+    
   }
 
 
@@ -461,24 +525,97 @@ body {
 
   @media (min-width: 992px) {
     .your_coffee{
-        background-image: url("https://i.imgur.com/usTy2nH.png");
-        min-height: 150px;
+        background-image: url("https://i.imgur.com/ZNE4rhz.png");
+        min-height: 90px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
     }
-    .menu{
-        font-size: 100px;
+    form.examples input[type=text] {
+        position: absolute;
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 450px;
+        height: 50px;
+        background:  rgba(252, 252, 252, 0.5);
+        top: 36%;
+        left: 10%;
+      }
       
-       
+      form.examples button {
+        position: absolute;
+        float: left;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background:  rgba(252, 252, 252, 0.5);
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        top: 36.4%;
+        left: 37.8%;
+      }
+      
+      form.examples button:hover {
+        background: #0b7dda;
+      }
+      
+      form.examples :after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .thuonghieu{
+        position: absolute;
+        top: 40px;
+        left: 13%;
+        font-size: 20px;
+        color:white;
+        font-weight: bold;
+      }
+      .sanpham{
+        position: absolute;
+        top: 40px;
+        left: 27%;
+        font-size: 20px;
+        color:white;
+        font-weight: bold;
+      } 
+      .cuahang{
+        position: absolute;
+        top: 40px;
+        left: 67%;
+        font-size: 20px;
+        color:white;
+        font-weight: bold;
+      }
+      .caphedonggoi{
+        position: absolute;
+        top: 40px;
+        left: 81%;
+        font-size: 20px;
+        color:white;
+        font-weight: bold;
+      }
+
+    .menu{
+        font-size: 1px;
+        
+        color: transparent;
+        padding: 0px;
+        
     }
     .part3{
         position: absolute;
-        top: 73%;
-        left:12%;
+        top: 70%;
+        left:20%;
         transform: translate(-50%, -50%);
-        font-size: 35px;
+        font-size: 25px;
         color: black;
         
         font-family: Arial, Helvetica, sans-serif;
@@ -494,10 +631,10 @@ body {
         }
         .bottom-left{
             position: absolute;
-            top: 37%;
+            top: 45%;
             left: 5%;
             
-            font-size: 90px;
+            font-size: 70px;
             color: darkgoldenrod;
             font-weight: bold;
           }
@@ -680,7 +817,40 @@ body {
   }
   
 
-   
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    background: #f1f1f1;
+    position: absolute;
+    left: 20%;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:  #cdd6dd;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+    left: 60%;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 }
 
@@ -693,15 +863,85 @@ body {
         background-size: 100%;
         position: relative;
     }
+    form.examples input[type=text] {
+        position: absolute;
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 230px;
+        height: 40px;
+        background:  rgba(252, 252, 252, 0.5);
+        top: 30%;
+        left: 10%;
+      }
+      
+      form.examples button {
+        position: absolute;
+        float: left;
+        width: 50px;
+        height: 40px;
+        padding: 10px;
+        background:  rgba(252, 252, 252, 0.5);
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        top: 30.7%;
+        left: 36.5%;
+      }
+      
+      form.examples button:hover {
+        background: #0b7dda;
+      }
+      
+      form.examples :after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .thuonghieu{
+        position: absolute;
+        top: 1px;
+        left: 1%;
+        font-size: 0px;
+        color:white;
+        font-weight: bold;
+      }
+      .sanpham{
+        position: absolute;
+        top: 1px;
+        left: 1%;
+        font-size: 0px;
+        color:white;
+        font-weight: bold;
+      } 
+      .cuahang{
+        position: absolute;
+        top: 1px;
+        left: 1%;
+        font-size: 0px;
+        color:white;
+        font-weight: bold;
+      }
+      .caphedonggoi{
+        position: absolute;
+        top: 1px;
+        left: 1%;
+        font-size: 0px;
+        color:white;
+        font-weight: bold;
+      }
     .menu{
-        font-size: 100px;
+        font-size: 50px;
       
        
     }
     .part3{
         position: absolute;
-        top: 70%;
-        left:15%;
+        top: 72%;
+        left:22%;
         transform: translate(-50%, -50%);
         font-size: 20px;
         color: black;
@@ -719,16 +959,16 @@ body {
         }
         .bottom-left{
             position: absolute;
-            top: 38%;
+            top: 43%;
             left: 10%;
             
-            font-size: 50px;
+            font-size: 40px;
             color: darkgoldenrod;
             font-weight: bold;
           }
           .boom{
             background-image: url("https://i.imgur.com/wAUkc92.png");
-            min-height: 780px;
+            min-height: 815px;
             background-position: left;
             background-repeat: no-repeat;
             background-size: 100%;
